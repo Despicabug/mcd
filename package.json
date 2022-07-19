@@ -78,7 +78,7 @@
     "deploy-main": "./scripts/deploy-mainnet"
   },
   "engines": {
-    "node": ">=12.x.x"
+    "node": ">=11.x.x"
   },
   "lint-staged": {
     "*.js": ["prettier --write --single-quote"]
