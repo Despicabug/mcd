@@ -86,6 +86,7 @@ const Deposit = ({ vault, reset }) => {
         <Text color="darkLavender" t="h4">
           {lang.formatString(lang.action_sidebar.deposit_title, symbol)}
         </Text>
+        {console.log(`Sidebar/Deposit.js//${medium}`)}
         <p>
           <Text t="body">
             {lang.formatString(lang.action_sidebar.deposit_description, symbol)}

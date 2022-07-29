@@ -97,6 +97,7 @@ const Generate = ({ vault, reset }) => {
         <Text.h4 color="darkLavender">
           {lang.action_sidebar.generate_title}
         </Text.h4>
+        {console.log(`Sidebar/Generate.js//:${medium}`)}
         <Text.p t="body">{lang.action_sidebar.generate_description}</Text.p>
         <Input
           type="number"

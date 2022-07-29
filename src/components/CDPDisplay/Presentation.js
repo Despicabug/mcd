@@ -13,7 +13,6 @@ import {
   ActionContainerRow,
   AmountDisplay,
   CdpViewCard,
-  ExtraInfo,
   InfoContainerRow
 } from './subcomponents';
 import theme from '../../styles/theme';
@@ -369,6 +368,7 @@ export default function({
         <Text.h2>
           {vaultType} {lang.cdp} #{vault.id}
         </Text.h2>
+        {console.log(`CDPDisplay/Presentations.js//:Owner Address: ${ownerAddress}`)}
       </Box>
       <Grid
         py="m"

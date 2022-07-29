@@ -132,11 +132,11 @@ const DepositAndGenerate = ({ vault, reset }) => {
     !generateAmount ? BigNumber(0) : BigNumber(generateAmount)
   );
 
-  const calculatedLiquidationPrice = calculateLiquidationPrice({
-    collateralAmount: calculatedCollateralAmount.toBigNumber(),
-    debtValue: calculatedDebtValue,
-    liquidationRatio: liquidationRatio.toBigNumber()
-  });
+  // const calculatedLiquidationPrice = calculateLiquidationPrice({
+  //   collateralAmount: calculatedCollateralAmount.toBigNumber(),
+  //   debtValue: calculatedDebtValue,
+  //   liquidationRatio: liquidationRatio.toBigNumber()
+  // });
 
   const calculatedCollateralizationRatio = vault.calculateCollateralizationRatio(
     {
@@ -170,6 +170,7 @@ const DepositAndGenerate = ({ vault, reset }) => {
         <Text.h4 color="darkLavender">
           {lang.action_sidebar.deposit_and_generate_title}
         </Text.h4>
+        {console.log(`Sidebar/DepositAndGenerate//${medium}`)}
         <Text t="body">
           {lang.formatString(lang.action_sidebar.deposit_description, symbol)}
         </Text>

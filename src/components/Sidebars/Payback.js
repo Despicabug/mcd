@@ -117,6 +117,7 @@ const Payback = ({ vault, reset }) => {
         <Text.h4 color="darkLavender">
           {lang.action_sidebar.payback_title}
         </Text.h4>
+        {console.log(`Sidebar/Payback.js//${medium}`)}
         <Text.p t="body">{lang.action_sidebar.payback_description}</Text.p>
         <Input
           type="number"
