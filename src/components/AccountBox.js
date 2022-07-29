@@ -91,7 +91,7 @@ const TokenBalance = ({
         {(hasActiveAccount &&
           amount &&
           usdRatio &&
-          `$${prettifyNumber(amount.times(usdRatio.toNumber()), true, 2)}`) ||
+          `Rs ${prettifyNumber(amount.times(usdRatio.toNumber()), true, 2)}`) ||
           '--'}
       </Text>
       <Flex width="20%" justifyContent="flex-end">

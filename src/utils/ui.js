@@ -15,7 +15,7 @@ export function formatCollateralizationRatio(ratio) {
 
 export function formatLiquidationPrice(price, symbol) {
   if (price < 0) price = 0;
-  return `${round(price, 2).toLocaleString()} ${symbol}/USD`;
+  return `${round(price, 2).toLocaleString()} ${symbol}/INR`;
 }
 
 function getSeparator(locale, separatorType) {
@@ -110,7 +110,7 @@ export function firstLetterLowercase(str) {
 }
 
 export function cleanSymbol(s) {
-  if (s === 'DSR-DAI') return 'DAI';
+  if (s === 'DSR-DAI') return 'INRC';
   return s;
 }
 

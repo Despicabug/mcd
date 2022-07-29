@@ -19,7 +19,7 @@ const DsrWithdraw = ({ savings, reset }) => {
   const { lang } = useLanguage();
   const { maker } = useMaker();
 
-  const displaySymbol = DAI.symbol;
+  const displaySymbol = 'INRC';
 
   const { daiLockedInDsr } = savings;
   const { DAI: daiBalance } = useWalletBalances();
@@ -90,7 +90,7 @@ const DsrWithdraw = ({ savings, reset }) => {
           disabled={!hasAllowance}
           type="number"
           min="0"
-          placeholder="0 DAI"
+          placeholder="0 INRC"
           value={withdrawAmount}
           onChange={e => {
             if (withdrawMaxFlag) setWithdrawMaxFlag(false);

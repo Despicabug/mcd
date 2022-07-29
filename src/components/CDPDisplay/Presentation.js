@@ -163,7 +163,7 @@ export default function({
             lang.notifications.vault_below_current_price,
             vaultType,
             `${formatter(currentCollateralNeeded)} ${gem}`,
-            `${formatter(currentDebtNeeded)} DAI`
+            `${formatter(currentDebtNeeded)} INRC`
           ),
           level: SAFETY_LEVELS.DANGER
         });
@@ -383,7 +383,7 @@ export default function({
           <Flex alignItems="flex-end" mt="s" mb="xs">
             <AmountDisplay
               amount={prettifyNumber(liquidationPrice, null, null, false)}
-              denomination="USD"
+              denomination="INR"
             />
             {/* <ExtraInfo>({gem}/USD)</ExtraInfo> */}
           </Flex>
@@ -398,7 +398,7 @@ export default function({
               null,
               null,
               false
-            )} USD`}
+            )} INR`}
           />
           <InfoContainerRow
             title={lang.cdp_page.liquidation_penalty}

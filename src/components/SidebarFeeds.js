@@ -57,7 +57,7 @@ const SidebarFeeds = ({ feeds }) => {
                     {value.symbol.split('/')[1]}
                   </Text>
                   <Text fontSize="1.4rem" color="darkPurple">
-                    {`${prettifyNumber(value, null, null, false)} USD`}
+                    {`${prettifyNumber(value, null, null, false)} INR`}
                   </Text>
                 </Flex>
               )

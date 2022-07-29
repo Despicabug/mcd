@@ -52,7 +52,7 @@ const CDPCreateConfirmSummary = ({
       lang.verbs.depositing,
       `${prettifyNumber(cdpParams.gemsToLock)} ${selectedIlk.gem}`
     ],
-    [lang.verbs.generating, `${prettifyNumber(cdpParams.daiToDraw)} DAI`],
+    [lang.verbs.generating, `${prettifyNumber(cdpParams.daiToDraw)} INRC`],
     [
       lang.collateralization,
       `${formatter(
@@ -68,7 +68,7 @@ const CDPCreateConfirmSummary = ({
     ],
     [
       lang.liquidation_price,
-      `$${formatter(
+      `Rs ${formatter(
         ilkData.calculateliquidationPrice(
           BigNumber(cdpParams.gemsToLock),
           DAI(cdpParams.daiToDraw)

@@ -19,7 +19,7 @@ const DsrDeposit = ({ savings, reset }) => {
   const { maker } = useMaker();
 
   const { symbol } = DAI;
-  const displaySymbol = 'DAI';
+  const displaySymbol = 'INRC';
 
   const { daiLockedInDsr } = savings;
   const { DAI: daiBalance } = useWalletBalances();
@@ -81,7 +81,7 @@ const DsrDeposit = ({ savings, reset }) => {
           disabled={!hasAllowance}
           type="number"
           min="0"
-          placeholder="0 DAI"
+          placeholder="0 INRC"
           value={depositAmount}
           onChange={onDepositAmountChange}
           error={depositAmountErrors}
@@ -101,7 +101,7 @@ const DsrDeposit = ({ savings, reset }) => {
         />
       </Grid>
       <ProxyAllowanceToggle
-        token="DAI"
+        token="INRC"
         onlyShowAllowance={true}
         trackBtnClick={trackBtnClick}
       />

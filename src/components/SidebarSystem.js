@@ -58,7 +58,7 @@ const SidebarSystem = ({ system }) => {
             </Text>
             <Box>
               <Text fontSize="s" color="darkPurple">
-                {value}
+              {param==='Total INRC Supply'?`${value?.split(" ")[0]} INRC`:value}
               </Text>
             </Box>
           </Flex>

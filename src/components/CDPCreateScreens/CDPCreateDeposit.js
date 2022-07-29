@@ -157,7 +157,7 @@ function OpenCDPForm({
               });
             }}
           >
-            {formatter(daiAvailableToGenerate)} DAI
+            {formatter(daiAvailableToGenerate)} INRC
           </Text>
         </Box>
         <RatioDisplay
@@ -242,11 +242,11 @@ const CDPCreateDepositSidebar = ({
             t="caption"
           />
         ],
-        [lang.liquidation_price, `$${liquidationPriceDisplay}`],
+        [lang.liquidation_price, `Rs ${liquidationPriceDisplay.split(" ")[0]} INR/${liquidationPriceDisplay.split("/")[1]}`],
         [
           lang.formatString(lang.current_ilk_price, selectedIlk.gem),
           //`$${formatter(collateralTypePrice)}`
-          `$${prettifyNumber(collateralTypePrice, false, null, false)} USD`
+          `Rs ${prettifyNumber(collateralTypePrice, false, null, false)} INR`
         ],
         [
           lang.stability_fee,
@@ -257,7 +257,7 @@ const CDPCreateDepositSidebar = ({
         ],
         [
           lang.cdp_create.max_dai_available_to_generate,
-          `${formatter(maxDaiAvailableToGenerate)} Dai`
+          `${formatter(maxDaiAvailableToGenerate)} INRC`
         ]
       ].map(([title, value]) => (
         <Grid gridRowGap="xs" key={title}>

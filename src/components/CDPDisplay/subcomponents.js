@@ -63,7 +63,7 @@ export const ActionContainerRow = ({ title, value, conversion, button }) => {
           color="darkLavender"
           justifySelf="end"
         >
-          {value}
+          {`${value.split(" ")[0]} INR`}
         </Text>
         {conversion ? (
           <ExtraInfo
@@ -73,7 +73,7 @@ export const ActionContainerRow = ({ title, value, conversion, button }) => {
             `}
             justifySelf="end"
           >
-            {conversion}
+            {`${conversion.split(" ")[0]} INR`}
           </ExtraInfo>
         ) : null}
         <Box

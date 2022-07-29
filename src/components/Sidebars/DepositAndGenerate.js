@@ -190,7 +190,7 @@ const DepositAndGenerate = ({ vault, reset }) => {
           value={generateAmount}
           min="0"
           onChange={onGenerateAmountChange}
-          placeholder="0.00 DAI"
+          placeholder="0.00 INRC"
           failureMessage={generateFailureMessage}
         />
       </Grid>
@@ -217,11 +217,11 @@ const DepositAndGenerate = ({ vault, reset }) => {
             false,
             null,
             false
-          )} USD`}
+          )} INR`}
         />
         <Info
           title={lang.action_sidebar.maximum_available_to_generate}
-          body={`${formatter(calculatedDaiAvailable, { precision: long })} DAI`}
+          body={`${formatter(calculatedDaiAvailable, { precision: long })} INRC`}
         />
         <Info
           title={lang.action_sidebar.new_liquidation_price}
@@ -230,7 +230,7 @@ const DepositAndGenerate = ({ vault, reset }) => {
             false,
             null,
             false
-          )} USD`}
+          )} INR`}
         />
         <Info
           title={lang.action_sidebar.new_collateralization_ratio}

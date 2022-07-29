@@ -141,14 +141,14 @@ const Deposit = ({ vault, reset }) => {
             false,
             null,
             false
-          )} USD`}
+          )} INR`}
         />
         <Info
           title={lang.action_sidebar.new_liquidation_price}
           // body={`${formatter(liquidationPrice, {
           //   infinity: BigNumber(0).toFixed(medium)
           // })} USD/${symbol}`}
-          body={`${prettifyNumber(liquidationPrice, false, null, false)} USD`}
+          body={`${prettifyNumber(liquidationPrice, false, null, false)} INR`}
         />
         <Info
           title={lang.action_sidebar.new_collateralization_ratio}

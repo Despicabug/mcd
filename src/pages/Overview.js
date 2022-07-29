@@ -145,14 +145,14 @@ function Overview({ viewedAddress }) {
           >
             <InfoCard
               title={lang.overview_page.total_collateral_locked}
-              amount={`$${viewedAddressVaults
+              amount={`Rs ${viewedAddressVaults
                 .reduce(
                   (acc, { collateralValue }) => collateralValue.plus(acc),
                   0
                 )
                 .toBigNumber()
                 .toFixed(2)}`}
-              denom={'USD'}
+              denom={'INR'}
             />
             <InfoCard
               title={lang.overview_page.total_dai_debt}
@@ -160,7 +160,7 @@ function Overview({ viewedAddress }) {
                 .reduce((acc, { debtValue }) => debtValue.plus(acc), 0)
                 .toBigNumber()
                 .toFixed(2)}`}
-              denom={'DAI'}
+              denom={'INRC'}
             />
           </Grid>
           <Box>
@@ -284,7 +284,7 @@ function Overview({ viewedAddress }) {
                           </Table.td>
                           <Table.td display={{ s: 'none', xl: 'table-cell' }}>
                             <Text t="caption" color="darkLavender">
-                              {debtValue.toBigNumber().toFixed(2)} DAI
+                              {debtValue.toBigNumber().toFixed(2)} INRC
                             </Text>
                           </Table.td>
                           <Table.td>
