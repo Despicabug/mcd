@@ -1,0 +1,74 @@
+{
+  "supportedNetworkIds": ["1337", "999", "5", "4", "3", "42", "1"],
+  "rpcUrls": {
+    "1": "https://mainnet.infura.io/v3/516f946979bc4fa187edcdc164e0bac0",
+    "42": "https://kovan.infura.io/v3/516f946979bc4fa187edcdc164e0bac0",
+    "3": "https://ropsten.infura.io/v3/516f946979bc4fa187edcdc164e0bac0",
+    "4": "https://rinkeby.infura.io/v3/516f946979bc4fa187edcdc164e0bac0",
+    "5": "https://goerli.infura.io/v3/516f946979bc4fa187edcdc164e0bac0",
+    "999": "http://localhost:2000",
+    "1337": "http://localhost:2000"
+  },
+  "wsRpcUrls": {
+    "1": "wss://mainnet.infura.io/ws/v3/516f946979bc4fa187edcdc164e0bac0",
+    "42": "wss://kovan.infura.io/ws/v3/516f946979bc4fa187edcdc164e0bac0",
+    "3": "wss://ropsten.infura.io/ws/v3/516f946979bc4fa187edcdc164e0bac0",
+    "4": "wss://rinkeby.infura.io/ws/v3/516f946979bc4fa187edcdc164e0bac0",
+    "5": "wss://goerli.infura.io/ws/v3/516f946979bc4fa187edcdc164e0bac0"
+  },
+  "networkNames": {
+    "1": "mainnet",
+    "42": "kovan",
+    "3": "ropsten",
+    "4": "rinkeby",
+    "5": "goerli",
+    "999": "testnet",
+    "1337": "testnet"
+  },
+  "networkDisplayNames": {
+    "1": "Mainnet",
+    "42": "Kovan Testnet",
+    "3": "Ropsten Testnet",
+    "4": "Rinkeby Testnet",
+    "5": "Goerli Testnet",
+    "999": "Testchain",
+    "1337": "Ex_Testchain"
+  },
+  "defaultNetwork": "42",
+  "exTestchainApiUrl": "http://localhost:4000/chain",
+  "showWalletTokens": [
+    "DAI",
+    "DSR",
+    "ETH",
+    "SAI",
+    "WETH",
+    "BAT",
+    "USDC",
+    "WBTC",
+    "TUSD",
+    "KNC",
+    "ZRX",
+    "MANA",
+    "USDT",
+    "PAXUSD",
+    "COMP",
+    "LRC",
+    "LINK",
+    "YFI",
+    "BAL",
+    "GUSD",
+    "UNI",
+    "RENBTC",
+    "AAVE"
+  ],
+  "trackingPages": {
+    "Overview": "Overview",
+    "CDP": "Dashboard",
+    "Save": "Dashboard",
+    "Landing": "Landing"
+  },
+  "txManager": {
+    "autoDismissFadeoutTime": 500,
+    "autoDismissTime": 10000
+  }
+}
